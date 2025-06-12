@@ -27,10 +27,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "*",
+		origin: "https://study-notion-beige-omega.vercel.app",
 		credentials: true,
 	})
 );
+
 app.use(
 	fileUpload({
 		useTempFiles: true,
